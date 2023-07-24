@@ -4,6 +4,8 @@ This is a simple application built with Nuxt 3 + TailwindCSS + Web5.js to track 
 
 Look at the [Web5 documentation](https://developer.tbd.website/docs/web5/) to learn more.
 
+CodeSandbox Demo - https://codesandbox.io/p/github/acekyd/fav-songs-web5/master
+
 ## Setup
 
 Make sure to install the dependencies:

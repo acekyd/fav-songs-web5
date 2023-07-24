@@ -74,6 +74,7 @@
 </template>
 <script setup>
 import { Web5 }from '@tbd54566975/web5';
+const runtimeConfig = useRuntimeConfig();
 
 let web5;
 let myDid;
@@ -120,7 +121,7 @@ const getCoverArt = async (title, artist) => {
   const trackinfo = await $fetch('https://ws.audioscrobbler.com/2.0/', {
     method: 'GET',
     params: { 
-      'api_key': '08b481194b7dadd54ab26e673e969bbf',
+      'api_key': runtimeConfig.public.LAST_FM_API_KEY,
       'method': 'track.getInfo',
       'format': 'json',
       'track': title.trim(),
